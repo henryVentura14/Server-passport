@@ -13,9 +13,9 @@ passport.deserializeUser(function (user, done) {
 passport.use(
   new GoogleStrategy(
     {
-      clientID:'560520990271-krlcisu7nd2jaapafse8tatousdugicr.apps.googleusercontent.com',
-      clientSecret: 'Stb80ntym8tM9I4dCIT1FGsG',
-      callbackURL: 'https://cryptic-tor-38932.herokuapp.com/auth/google/callback'
+      clientID:'YOUR ID',
+      clientSecret: 'YOUR CLIENT',
+      callbackURL: 'YOUR SERVER AND PORT /auth/google/callback'
     },
     function (accessToken, refreshToken, profile, done) {
       var userData = {
